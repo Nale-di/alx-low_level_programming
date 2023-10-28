@@ -1,4 +1,3 @@
-		
 #include "main.h"
 /**
  * _strpbrk - Entry point
@@ -6,7 +5,7 @@
  * @accept: input
  * Return: Always 0 (Success)
  */
-char *_strpbrk(char *s, char *accept)
+	char *_strpbrk(char *s, char *accept)
 	{
 	int k;
 
