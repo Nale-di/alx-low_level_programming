@@ -10,11 +10,17 @@
 *
 * Description: first struct with alx
 */
+/**
+ * dog_t -now name for struct dog
+ */
+typedef struct dog dog_t;
 struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};       
+};
+
 void init_dog(struct dog *d, char *name, float age, char *OWNER);
+void print_dog(struct dog *d);
 #endif
