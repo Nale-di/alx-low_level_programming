@@ -1,26 +1,34 @@
-#ifndef _DOG_H
-#define _DOG_H_
+#ifndef DOG_H
+#define DOG_H
+
 
 /**
-*struct dog -a struct that create a dog info
-* 
-* @name: the name of the dog
-* @age: age of dog
-* @owner:the owner of dog
+* struct dog - a dog's basic info
+* @name: First member
+* @age: Second member
+* @owner: Third member
 *
-* Description: first struct with alx
+* Description: Longer description
 */
-/**
- * dog_t -now name for struct dog
- */
-typedef struct dog dog_t;
-struct dog
-{
+	struct dog
+	{
 	char *name;
 	float age;
 	char *owner;
-};
+	};
 
-void init_dog(struct dog *d, char *name, float age, char *OWNER);
-void print_dog(struct dog *d);
+
+/**
+* dog_t - typedef for struct dog
+*/
+	typedef struct dog dog_t;
+
+
+	void init_dog(struct dog *d, char *name, float age, char *owner);
+	void print_dog(struct dog *d);
+	dog_t *new_dog(char *name, float age, char *owner);
+	void free_dog(dog_t *d);
+	char *_strcpy(char *dest, char *src);
+	int _strlen(char *s);
+
 #endif
