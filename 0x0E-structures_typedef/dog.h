@@ -1,19 +1,19 @@
-#ifndef DOG
-#define DOG
+#ifndef _DOG_H_
+#define _DOG_H_
 
 
-   /**
-    * struct dog - dog class
-    *
-    * @name: Name of the dog
-    *
-    * @age: Age of the dog
-    *
-    * @owner: Owner of the dog
-    */
+/**
+  * struct dog - dog class
+  *
+  * @name: Name of the dog
+  *
+  * @age: Age of the dog
+  *
+  * @owner: Owner of the dog
+  */
 
 
-	struct dog(void)
+	struct dog
 {
 	char *name;
 	float age;
